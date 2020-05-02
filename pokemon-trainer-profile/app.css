@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{max-width: 100vw;height: auto;scroll-behavior: smooth; 
+    font-family: 'Titillium Web', monospace;}
+img{min-width: 200px; max-width:200px;height: auto;}
+h1, h2{text-transform: uppercase;}
+h1, h2, h4{text-align: center;}
+legend{font-weight: 900;}
+
+.hero
+{
+    background-image: url('https://i.redd.it/mjfh6tn3sv731.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+    .hero-title
+    {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 4rem;
+        text-align: center;
+        height: 100vh;
+
+    }
+        .hero-title h1
+        {color: white;}
+        .hero-title input, .hero-title button
+        {
+            padding: 0.5rem;
+            margin: 1rem;
+            font-family: 'Titillium Web', monospace;
+            border: none;
+            width: 40%;
+        }
+        .hero-title input
+        {
+            width: 90%;
+            display: none;
+        }
+        .hero-title button
+        {
+            background-color: green;
+            color: white;
+        }
+
+.index
+{
+    background-image: 
+    linear-gradient(#ffe84d, #f6ae34, #ed8e5f, #ee58aa);
+    padding: 2rem;
+}
+.card
+{
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 100vw;
+}
+    .info-container
+    {
+        display: flex;
+    }
+        .image
+        {
+            flex-basis: 50%;
+        }
+
+        .profile
+        {
+            flex-basis: 50%;
+            text-align: left;
+            width: 50%;
+        }
+            .sub-profile
+            {
+                padding: 1rem 0;
+            }
+    .team-container
+    {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin: 2rem 0;
+    }
+
+            .pokemon-name{text-align: center;}
+
+                .pokemon-name img{min-width: 100px;max-width: 100px;}
